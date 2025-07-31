@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Happy M. Anniversary My King👑💖</title>
+  <style>
+    body { background: #fff0f5; font-family: sans-serif; display:flex; justify-content:center; align-items:center; height:100vh; margin:0; }
+    .container { background:#fff; padding:25px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); max-width:400px; text-align:center; }
+    h1 { font-size: 1.8em; color: #d63384; }
+    button { padding: 12px 25px; font-size: 1em; margin: 10px; border: none; border-radius: 5px; cursor: pointer; }
+    #yes { background-color: #d63384; color: white; }
+    #no { background-color: #ffc107; position: relative; }
+  </style>
+</head>
+<body>
+  <div class="container" id="box">
+    <h1>Kya tum ab bhi mujhe pyaar karte ho, My King👑💖?</h1>
+    <button id="yes">YES</button>
+    <button id="no">NO</button>
+  </div>
+  <script>
+    const noBtn = document.getElementById('no');
+    const yesBtn = document.getElementById('yes');
+    const box = document.getElementById('box');
+
+    noBtn.addEventListener('mouseover', () => {
+      const x = Math.random() * 200;
+      const y = Math.random() * 200;
+      noBtn.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    yesBtn.addEventListener('click', () => {
+      box.innerHTML = `
+        <h2>Happy 3rd Anniversary, My King👑</h2>
+        <p>3 saal pehle, 2 August 2022 raat 10:33 baje, maine tumhara haath thaama tha.</p>
+        <p>Ye din, ye waqt, meri zindagi ka sabse khoobsurat pal ban gaya.</p>
+        <p>Tum sirf mere dil ka sukoon nahi, mera sab kuch ho.</p>
+        <p>Mujhe pata hai ki main tumse kitna pyaar karti hoon, aur tum bhi mujhse karte ho.</p>
+        <p>Bas ek baat—YES, main ab bhi tumse pyaar karti hoon 💖</p>
+        <p>— Tumhari hamesha ke liye, Lima</p>
+      `;
+    });
+  </script>
+</body>
+</html>
